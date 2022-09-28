@@ -23,5 +23,4 @@ spec:
           - "&&"
           - "exit"
           - "1"
-        ports:
-        - containerPort: 80
+
