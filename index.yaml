@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  helm-fail:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2022-09-28T14:31:34.727106261Z"
+    description: A Helm chart destined to fail! Useful for testing and other things...
+    digest: 30dd2bba6d02d230febf0dd95ad1ae41bd06bcbba25ac670b5e6f7d12b1ae129
+    name: helm-fail
+    type: application
+    urls:
+    - https://github.com/michaelfedell/helm-fail/releases/download/helm-fail-0.1.0/helm-fail-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-09-28T14:31:34.727110361Z"
