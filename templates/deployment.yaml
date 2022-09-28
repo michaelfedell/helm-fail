@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tester-deployment
+  labels:
+    app: tester
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tester
+  template:
+    metadata:
+      labels:
+        app: tester
+    spec:
+      containers:
+      - name: tester
+        image: busybox
+        command:
+          - "sleep"
+          - "60"
+          - "&&"
+          - "exit"
+          - "1"
+        ports:
+        - containerPort: 80
